@@ -1,0 +1,10 @@
+services:
+  customizer:
+    class: Drupal\customizer\Customizer
+    arguments: ['@theme.manager', '@theme_handler', '@file_system', '@config.factory', '@asset.css.collection_optimizer']
+
+  customizer.config_event_subscriber:
+    class: Drupal\customizer\EventSubscriber\ConfigEventsSubscriber
+    arguments: ['@customizer']
+    tags:
+      - { name: event_subscriber }

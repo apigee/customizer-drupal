@@ -1,0 +1,7 @@
+customizer.form:
+  path: '/admin/appearance/customizer/{theme}'
+  defaults:
+    _form: '\Drupal\customizer\Form\CustomizerForm'
+    _title_callback: 'theme_handler:getName'
+  requirements:
+    _permission: 'administer themes'

@@ -1,0 +1,12 @@
+form:
+  css:
+    theme:
+      css/customizer.farbtastic.css: {}
+      css/customizer.form.css: {}
+  js:
+    js/customizer.form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/jquery.farbtastic
